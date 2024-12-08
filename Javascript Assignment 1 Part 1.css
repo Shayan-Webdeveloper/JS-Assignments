@@ -1,0 +1,78 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     width: 100%;
+     height: 100vh;
+}
+body{
+     background: linear-gradient(140deg, red, orange, yellow, green, blue, indigo, violet);
+     background-size: 400% 400%;
+     animation: rainbowAnimation 10s ease infinite;
+     color: white;
+}
+@keyframes rainbowAnimation {
+     0% { 
+          background-position: 0% 50%;
+     } 50% { 
+          background-position: 100% 50%; 
+     } 100% { 
+          background-position: 0% 50%; 
+     } 
+}
+button{
+     display: block !important;
+     margin: auto;
+     margin-top: 5%;
+     color: white;
+     border-radius: 110px;
+     width: 60%;
+     height: 12vh;
+     font-size: 2rem;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
+     border: none;
+     outline: 8px solid; 
+     cursor: pointer;
+     animation: rainbowOutline 5s linear infinite;
+}
+.b-1{
+     background-color: cyan;
+}
+.b-2{
+     background-color: chartreuse;
+}
+.b-3{
+     background-color: deeppink;
+}
+.b-4{
+     background-color: dodgerblue;
+}
+@keyframes rainbowOutline { 
+     0% { 
+          outline-color: red; 
+     } 
+     14% { 
+          outline-color: orange; 
+     } 
+     28% { 
+          outline-color: yellow; 
+     } 
+     42% { 
+          outline-color: green; 
+     } 
+     57% { 
+          outline-color: blue; 
+     } 
+     71% { 
+          outline-color: indigo; 
+     } 
+     85% { 
+          outline-color: violet; 
+     } 
+     100% { 
+          outline-color: red; 
+     }
+     }
